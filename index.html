@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <title>Is sammy fired?</title>
+</head>
+
+<body>
+    <h1>Is sammy fired?</h1>
+    <div id="answer"></div>
+    <button id="ask">Click here to find out</button>
+    <script>
+        var button = document.getElementById("ask");
+        button.onclick = function () {
+            document.getElementById("answer").innerHTML = (Math.random() < 0.6) ? "Yes" : Math.random() < 0.7 ? "Prolly" : "No";
+        };
+    </script>
+</body>
+
+</html>
